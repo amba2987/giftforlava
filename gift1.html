@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Our Memory Lane 💑</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffe6f0, #fff0f5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      position: relative;
+    }
+
+    h1 {
+      margin-top: 2rem;
+      font-size: 2rem;
+      color: #ff4d6d;
+    }
+
+    .memory-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+      gap: 1.5rem;
+    }
+
+    .memory {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+      padding: 1rem;
+      width: 250px;
+      transition: transform 0.3s;
+    }
+
+    .memory:hover {
+      transform: translateY(-5px);
+    }
+
+    .memory img {
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    .memory p {
+      margin-top: 0.8rem;
+      color: #d6336c;
+      font-weight: bold;
+    }
+
+    .heart-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .heart {
+      position: absolute;
+      font-size: 2rem;
+      color: #ffb6c1;
+      animation: float 10s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    .back-btn {
+      margin: 2rem;
+      padding: 0.5rem 1rem;
+      background-color: #ff85a2;
+      border: none;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      text-decoration: none;
+    }
+
+    .back-btn:hover {
+      background-color: #ff4d6d;
+    }
+
+    .big-heart {
+      font-size: 6rem;
+      margin-bottom: 3rem;
+      animation: beat 1.5s infinite;
+      color: #ff4d6d;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Our Memory Lane 🥰</h1>
+
+  <div class="memory-container">
+    <div class="memory">
+      <img src="C:\Users\Ambalika\Desktop\HTML PRACTICE\2017\us1.jpg" alt="Cute moment 1" />
+      <p> us in genshin 😊</p>
+    </div>
+    <div class="memory">
+      <img src="C:\Users\Ambalika\Desktop\HTML PRACTICE\2017\us2.jpg" alt="Cute moment 2" />
+      <p> us as snapchat avatars 💕</p>
+    </div>
+    <div class="memory">
+      <img src="C:\Users\Ambalika\Desktop\HTML PRACTICE\2017\us3.jpg" alt="Cute moment 3" />
+      <p> us if we were in anime 😊</p>
+    </div>
+  </div>
+
+  <div class="big-heart">❤️</div>
+
+  <a href="gift.html" class="back-btn">← 🏠 Back to Home</a>
+   <a href="gift2.html" class="next-page-btn">Go to 3rd page 💌</a>
+
+<style>
+  .next-page-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #ff85a2;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(255, 133, 162, 0.4);
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+
+  .next-page-btn:hover {
+    background-color: #ff4d6d;
+    transform: translateY(-2px);
+  }
+
+  <div class="heart-bg">
+    <div class="heart" style="left: 10%;">💖</div>
+    <div class="heart" style="left: 30%; animation-delay: 2s;">💗</div>
+    <div class="heart" style="left: 50%; animation-delay: 4s;">💞</div>
+    <div class="heart" style="left: 70%; animation-delay: 1s;">💘</div>
+    <div class="heart" style="left: 90%; animation-delay: 3s;">❤️</div>
+  </div>
+
+</body>
+</html>
